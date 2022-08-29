@@ -28,7 +28,7 @@ def main():
             for tweet in tweets:
                 if tweet.id in likedTweets:
                     continue
-                client.like(tweet)
+                client.like(tweet.id)
                 likedTweets.append(tweet.id)
                 print(f"tweet id:{tweet.id} liked")
                 time.sleep(15*60/50)
